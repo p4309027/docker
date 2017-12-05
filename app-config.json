@@ -1,0 +1,5 @@
+{
+    "connectionString": "mongodb://test:test@ds113936.mlab.com:13936/mean",
+    "apiUrl": "http://3amigosa.azurewebsites.net/as/api",
+    "secret": "jwtsecret"
+}
