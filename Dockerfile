@@ -1,11 +1,9 @@
 
 
 # specify the node base image with your desired version node:<version>
-FROM node:8.9.1
+FROM node:6.0.45
 WORKDIR /
 COPY package.json /
-COPY tsconfig.aot.json /
-COPY tsconfig.json /
 RUN npm install
 COPY . /
 CMD [ "npm", "start" ]
