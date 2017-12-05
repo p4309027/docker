@@ -26,6 +26,7 @@ import * as import16 from '@angular/common/src/directives/ng_class';
 import * as import17 from '@angular/common/src/directives/ng_if';
 import * as import18 from '@angular/core/src/change_detection/differs/keyvalue_differs';
 import * as import19 from '@angular/core/src/linker/element_ref';
+import * as import20 from '@angular/core/src/security';
 var renderType_StaffComponent_Host = null;
 var _View_StaffComponent_Host0 = (function (_super) {
     __extends(_View_StaffComponent_Host0, _super);
@@ -183,19 +184,25 @@ var _View_StaffComponent1 = (function (_super) {
         this.renderer.setElementAttribute(this._el_28, 'type', 'submit');
         this._text_29 = this.renderer.createText(this._el_28, 'Update', null);
         this._text_30 = this.renderer.createText(this._el_9, '\n        ', null);
-        this._el_31 = this.renderer.createElement(this._el_9, 'button', null);
+        this._el_31 = this.renderer.createElement(this._el_9, 'a', null);
         this.renderer.setElementAttribute(this._el_31, 'class', 'btn btn-primary');
         this.renderer.setElementAttribute(this._el_31, 'style', 'float: right;  margin-right:10px;');
         this.renderer.setElementAttribute(this._el_31, 'type', 'submit');
         this._text_32 = this.renderer.createText(this._el_31, 'Orders', null);
         this._text_33 = this.renderer.createText(this._el_9, '\n        ', null);
-        this._el_34 = this.renderer.createElement(this._el_9, 'button', null);
+        this._el_34 = this.renderer.createElement(this._el_9, 'a', null);
         this.renderer.setElementAttribute(this._el_34, 'class', 'btn btn-primary');
         this.renderer.setElementAttribute(this._el_34, 'style', 'float: right; margin-right:10px;');
         this.renderer.setElementAttribute(this._el_34, 'type', 'submit');
-        this._text_35 = this.renderer.createText(this._el_34, 'Messages', null);
-        this._text_36 = this.renderer.createText(this._el_9, '        \n    ', null);
-        this._text_37 = this.renderer.createText(this._el_0, '\n', null);
+        this._text_35 = this.renderer.createText(this._el_34, ' Messages', null);
+        this._text_36 = this.renderer.createText(this._el_9, '\n        ', null);
+        this._el_37 = this.renderer.createElement(this._el_9, 'a', null);
+        this.renderer.setElementAttribute(this._el_37, 'class', 'btn btn-primary');
+        this.renderer.setElementAttribute(this._el_37, 'style', 'float: right; margin-right:10px;');
+        this.renderer.setElementAttribute(this._el_37, 'type', 'submit');
+        this._text_38 = this.renderer.createText(this._el_37, ' New Message', null);
+        this._text_39 = this.renderer.createText(this._el_9, '        \n    ', null);
+        this._text_40 = this.renderer.createText(this._el_0, '\n', null);
         this._expr_0 = import7.UNINITIALIZED;
         this._map_0 = import4.pureProxy2(function (p0, p1) {
             return {
@@ -213,6 +220,9 @@ var _View_StaffComponent1 = (function (_super) {
         this._expr_9 = import7.UNINITIALIZED;
         var disposable_0 = this.renderer.listen(this._el_24, 'change', this.eventHandler(this._handle_change_24_0.bind(this)));
         var disposable_1 = this.renderer.listen(this._el_28, 'click', this.eventHandler(this._handle_click_28_0.bind(this)));
+        this._expr_11 = import7.UNINITIALIZED;
+        this._expr_12 = import7.UNINITIALIZED;
+        this._expr_13 = import7.UNINITIALIZED;
         this.init([].concat([this._el_0]), [
             this._el_0,
             this._text_1,
@@ -251,7 +261,10 @@ var _View_StaffComponent1 = (function (_super) {
             this._el_34,
             this._text_35,
             this._text_36,
-            this._text_37
+            this._el_37,
+            this._text_38,
+            this._text_39,
+            this._text_40
         ], [
             disposable_0,
             disposable_1
@@ -325,6 +338,21 @@ var _View_StaffComponent1 = (function (_super) {
         if (import4.checkBinding(throwOnChange, this._expr_9, currVal_9)) {
             this.renderer.setElementProperty(this._el_24, 'checked', currVal_9);
             this._expr_9 = currVal_9;
+        }
+        var currVal_11 = import4.interpolate(1, 'http://3amigoso.azurewebsites.net/order/displayorders/?custoRef=', this.context.$implicit.email, '');
+        if (import4.checkBinding(throwOnChange, this._expr_11, currVal_11)) {
+            this.renderer.setElementProperty(this._el_31, 'href', this.viewUtils.sanitizer.sanitize(import20.SecurityContext.URL, currVal_11));
+            this._expr_11 = currVal_11;
+        }
+        var currVal_12 = import4.interpolate(1, 'http://3amigosm.azurewebsites.net/message?custid=', this.context.$implicit.email, '');
+        if (import4.checkBinding(throwOnChange, this._expr_12, currVal_12)) {
+            this.renderer.setElementProperty(this._el_34, 'href', this.viewUtils.sanitizer.sanitize(import20.SecurityContext.URL, currVal_12));
+            this._expr_12 = currVal_12;
+        }
+        var currVal_13 = import4.interpolate(1, 'http://3amigosm.azurewebsites.net/message/newmessage?custid=', this.context.$implicit.email, '');
+        if (import4.checkBinding(throwOnChange, this._expr_13, currVal_13)) {
+            this.renderer.setElementProperty(this._el_37, 'href', this.viewUtils.sanitizer.sanitize(import20.SecurityContext.URL, currVal_13));
+            this._expr_13 = currVal_13;
         }
         this.detectViewChildrenChanges(throwOnChange);
     };

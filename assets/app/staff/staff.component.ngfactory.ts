@@ -24,6 +24,7 @@ import * as import16 from '@angular/common/src/directives/ng_class';
 import * as import17 from '@angular/common/src/directives/ng_if';
 import * as import18 from '@angular/core/src/change_detection/differs/keyvalue_differs';
 import * as import19 from '@angular/core/src/linker/element_ref';
+import * as import20 from '@angular/core/src/security';
 var renderType_StaffComponent_Host:import0.RenderComponentType = (null as any);
 class _View_StaffComponent_Host0 extends import1.AppView<any> {
   _el_0:any;
@@ -160,7 +161,10 @@ class _View_StaffComponent1 extends import1.AppView<any> {
   _el_34:any;
   _text_35:any;
   _text_36:any;
-  _text_37:any;
+  _el_37:any;
+  _text_38:any;
+  _text_39:any;
+  _text_40:any;
   /*private*/ _expr_0:any;
   _map_0:any;
   /*private*/ _expr_1:any;
@@ -171,6 +175,9 @@ class _View_StaffComponent1 extends import1.AppView<any> {
   /*private*/ _expr_6:any;
   /*private*/ _expr_8:any;
   /*private*/ _expr_9:any;
+  /*private*/ _expr_11:any;
+  /*private*/ _expr_12:any;
+  /*private*/ _expr_13:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement) {
     super(_View_StaffComponent1,renderType_StaffComponent,import6.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
   }
@@ -225,19 +232,25 @@ class _View_StaffComponent1 extends import1.AppView<any> {
     this.renderer.setElementAttribute(this._el_28,'type','submit');
     this._text_29 = this.renderer.createText(this._el_28,'Update',(null as any));
     this._text_30 = this.renderer.createText(this._el_9,'\n        ',(null as any));
-    this._el_31 = this.renderer.createElement(this._el_9,'button',(null as any));
+    this._el_31 = this.renderer.createElement(this._el_9,'a',(null as any));
     this.renderer.setElementAttribute(this._el_31,'class','btn btn-primary');
     this.renderer.setElementAttribute(this._el_31,'style','float: right;  margin-right:10px;');
     this.renderer.setElementAttribute(this._el_31,'type','submit');
     this._text_32 = this.renderer.createText(this._el_31,'Orders',(null as any));
     this._text_33 = this.renderer.createText(this._el_9,'\n        ',(null as any));
-    this._el_34 = this.renderer.createElement(this._el_9,'button',(null as any));
+    this._el_34 = this.renderer.createElement(this._el_9,'a',(null as any));
     this.renderer.setElementAttribute(this._el_34,'class','btn btn-primary');
     this.renderer.setElementAttribute(this._el_34,'style','float: right; margin-right:10px;');
     this.renderer.setElementAttribute(this._el_34,'type','submit');
-    this._text_35 = this.renderer.createText(this._el_34,'Messages',(null as any));
-    this._text_36 = this.renderer.createText(this._el_9,'        \n    ',(null as any));
-    this._text_37 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._text_35 = this.renderer.createText(this._el_34,' Messages',(null as any));
+    this._text_36 = this.renderer.createText(this._el_9,'\n        ',(null as any));
+    this._el_37 = this.renderer.createElement(this._el_9,'a',(null as any));
+    this.renderer.setElementAttribute(this._el_37,'class','btn btn-primary');
+    this.renderer.setElementAttribute(this._el_37,'style','float: right; margin-right:10px;');
+    this.renderer.setElementAttribute(this._el_37,'type','submit');
+    this._text_38 = this.renderer.createText(this._el_37,' New Message',(null as any));
+    this._text_39 = this.renderer.createText(this._el_9,'        \n    ',(null as any));
+    this._text_40 = this.renderer.createText(this._el_0,'\n',(null as any));
     this._expr_0 = import7.UNINITIALIZED;
     this._map_0 = import4.pureProxy2((p0:any,p1:any):{[key: string]:any} => {
       return {
@@ -256,6 +269,9 @@ class _View_StaffComponent1 extends import1.AppView<any> {
     this._expr_9 = import7.UNINITIALIZED;
     var disposable_0:Function = this.renderer.listen(this._el_24,'change',this.eventHandler(this._handle_change_24_0.bind(this)));
     var disposable_1:Function = this.renderer.listen(this._el_28,'click',this.eventHandler(this._handle_click_28_0.bind(this)));
+    this._expr_11 = import7.UNINITIALIZED;
+    this._expr_12 = import7.UNINITIALIZED;
+    this._expr_13 = import7.UNINITIALIZED;
     this.init([].concat([this._el_0]),[
       this._el_0,
       this._text_1,
@@ -294,7 +310,10 @@ class _View_StaffComponent1 extends import1.AppView<any> {
       this._el_34,
       this._text_35,
       this._text_36,
-      this._text_37
+      this._el_37,
+      this._text_38,
+      this._text_39,
+      this._text_40
     ]
     ,[
       disposable_0,
@@ -358,6 +377,21 @@ class _View_StaffComponent1 extends import1.AppView<any> {
     if (import4.checkBinding(throwOnChange,this._expr_9,currVal_9)) {
       this.renderer.setElementProperty(this._el_24,'checked',currVal_9);
       this._expr_9 = currVal_9;
+    }
+    const currVal_11:any = import4.interpolate(1,'http://3amigoso.azurewebsites.net/order/displayorders/?custoRef=',this.context.$implicit.email,'');
+    if (import4.checkBinding(throwOnChange,this._expr_11,currVal_11)) {
+      this.renderer.setElementProperty(this._el_31,'href',this.viewUtils.sanitizer.sanitize(import20.SecurityContext.URL,currVal_11));
+      this._expr_11 = currVal_11;
+    }
+    const currVal_12:any = import4.interpolate(1,'http://3amigosm.azurewebsites.net/message?custid=',this.context.$implicit.email,'');
+    if (import4.checkBinding(throwOnChange,this._expr_12,currVal_12)) {
+      this.renderer.setElementProperty(this._el_34,'href',this.viewUtils.sanitizer.sanitize(import20.SecurityContext.URL,currVal_12));
+      this._expr_12 = currVal_12;
+    }
+    const currVal_13:any = import4.interpolate(1,'http://3amigosm.azurewebsites.net/message/newmessage?custid=',this.context.$implicit.email,'');
+    if (import4.checkBinding(throwOnChange,this._expr_13,currVal_13)) {
+      this.renderer.setElementProperty(this._el_37,'href',this.viewUtils.sanitizer.sanitize(import20.SecurityContext.URL,currVal_13));
+      this._expr_13 = currVal_13;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }

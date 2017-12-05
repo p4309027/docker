@@ -86,23 +86,28 @@ class _View_HeaderComponent0 extends import1.AppView<import3.HeaderComponent> {
   _text_29:any;
   _text_30:any;
   _el_31:any;
-  _RouterLinkActive_31_3:import11.RouterLinkActive;
-  _query_RouterLink_31_0:import12.QueryList<any>;
-  _query_RouterLinkWithHref_31_1:import12.QueryList<any>;
-  _el_32:any;
-  _RouterLinkWithHref_32_3:import13.RouterLinkWithHref;
-  _text_33:any;
+  _text_32:any;
+  _el_33:any;
   _text_34:any;
   _text_35:any;
   _text_36:any;
-  _text_37:any;
+  _el_37:any;
+  _RouterLinkActive_37_3:import11.RouterLinkActive;
+  _query_RouterLink_37_0:import12.QueryList<any>;
+  _query_RouterLinkWithHref_37_1:import12.QueryList<any>;
+  _el_38:any;
+  _RouterLinkWithHref_38_3:import13.RouterLinkWithHref;
+  _text_39:any;
+  _text_40:any;
+  _text_41:any;
+  _text_42:any;
+  _text_43:any;
   /*private*/ _expr_0:any;
   /*private*/ _expr_1:any;
   /*private*/ _expr_2:any;
-  /*private*/ _expr_3:any;
   _arr_0:any;
+  /*private*/ _expr_4:any;
   /*private*/ _expr_5:any;
-  /*private*/ _expr_6:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement) {
     super(_View_HeaderComponent0,renderType_HeaderComponent,import6.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
   }
@@ -144,6 +149,7 @@ class _View_HeaderComponent0 extends import1.AppView<import3.HeaderComponent> {
     this._text_20 = this.renderer.createText(this._el_19,'\n          ',(null as any));
     this._el_21 = this.renderer.createElement(this._el_19,'a',(null as any));
     this.renderer.setElementAttribute(this._el_21,'class','nav-link');
+    this.renderer.setElementAttribute(this._el_21,'href','http://3amigoss.azurewebsites.net/api/products');
     this._text_22 = this.renderer.createText(this._el_21,'Products',(null as any));
     this._text_23 = this.renderer.createText(this._el_19,'\n        ',(null as any));
     this._text_24 = this.renderer.createText(this._el_11,'\n        ',(null as any));
@@ -152,34 +158,42 @@ class _View_HeaderComponent0 extends import1.AppView<import3.HeaderComponent> {
     this._text_26 = this.renderer.createText(this._el_25,'\n          ',(null as any));
     this._el_27 = this.renderer.createElement(this._el_25,'a',(null as any));
     this.renderer.setElementAttribute(this._el_27,'class','nav-link');
-    this._text_28 = this.renderer.createText(this._el_27,'Messages',(null as any));
+    this.renderer.setElementAttribute(this._el_27,'href','http://3amigosp.azurewebsites.net/purchasing');
+    this._text_28 = this.renderer.createText(this._el_27,'Purchases',(null as any));
     this._text_29 = this.renderer.createText(this._el_25,'\n        ',(null as any));
-    this._text_30 = this.renderer.createText(this._el_11,'\n                  \n        ',(null as any));
+    this._text_30 = this.renderer.createText(this._el_11,'\n        ',(null as any));
     this._el_31 = this.renderer.createElement(this._el_11,'li',(null as any));
     this.renderer.setElementAttribute(this._el_31,'class','nav-item');
-    this.renderer.setElementAttribute(this._el_31,'routerLinkActive','active');
-    this.renderer.setElementAttribute(this._el_31,'style','padding-right:0px');
-    this._RouterLinkActive_31_3 = new import11.RouterLinkActive(this.parentInjector.get(import14.Router),new import15.ElementRef(this._el_31),this.renderer);
-    this._query_RouterLink_31_0 = new import12.QueryList<any>();
-    this._query_RouterLinkWithHref_31_1 = new import12.QueryList<any>();
-    this._el_32 = this.renderer.createElement(this._el_31,'a',(null as any));
-    this.renderer.setElementAttribute(this._el_32,'class','nav-link');
-    this._RouterLinkWithHref_32_3 = new import13.RouterLinkWithHref(this.parentInjector.get(import14.Router),this.parentInjector.get(import16.ActivatedRoute),this.parentInjector.get(import17.LocationStrategy));
-    this._text_33 = this.renderer.createText(this._el_32,'User',(null as any));
-    this._text_34 = this.renderer.createText(this._el_11,'\n      ',(null as any));
-    this._text_35 = this.renderer.createText(this._el_4,'\n    \n  ',(null as any));
-    this._text_36 = this.renderer.createText(this._el_2,'\n',(null as any));
-    this._text_37 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._text_32 = this.renderer.createText(this._el_31,'\n          ',(null as any));
+    this._el_33 = this.renderer.createElement(this._el_31,'a',(null as any));
+    this.renderer.setElementAttribute(this._el_33,'class','nav-link');
+    this._text_34 = this.renderer.createText(this._el_33,'Messages',(null as any));
+    this._text_35 = this.renderer.createText(this._el_31,'\n        ',(null as any));
+    this._text_36 = this.renderer.createText(this._el_11,'\n                  \n        ',(null as any));
+    this._el_37 = this.renderer.createElement(this._el_11,'li',(null as any));
+    this.renderer.setElementAttribute(this._el_37,'class','nav-item');
+    this.renderer.setElementAttribute(this._el_37,'routerLinkActive','active');
+    this.renderer.setElementAttribute(this._el_37,'style','padding-right:0px');
+    this._RouterLinkActive_37_3 = new import11.RouterLinkActive(this.parentInjector.get(import14.Router),new import15.ElementRef(this._el_37),this.renderer);
+    this._query_RouterLink_37_0 = new import12.QueryList<any>();
+    this._query_RouterLinkWithHref_37_1 = new import12.QueryList<any>();
+    this._el_38 = this.renderer.createElement(this._el_37,'a',(null as any));
+    this.renderer.setElementAttribute(this._el_38,'class','nav-link');
+    this._RouterLinkWithHref_38_3 = new import13.RouterLinkWithHref(this.parentInjector.get(import14.Router),this.parentInjector.get(import16.ActivatedRoute),this.parentInjector.get(import17.LocationStrategy));
+    this._text_39 = this.renderer.createText(this._el_38,'User',(null as any));
+    this._text_40 = this.renderer.createText(this._el_11,'\n      ',(null as any));
+    this._text_41 = this.renderer.createText(this._el_4,'\n    \n  ',(null as any));
+    this._text_42 = this.renderer.createText(this._el_2,'\n',(null as any));
+    this._text_43 = this.renderer.createText(parentRenderNode,'\n',(null as any));
     this._expr_0 = import7.UNINITIALIZED;
     this._expr_1 = import7.UNINITIALIZED;
     this._expr_2 = import7.UNINITIALIZED;
-    this._expr_3 = import7.UNINITIALIZED;
-    var disposable_0:Function = this.renderer.listen(this._el_32,'click',this.eventHandler(this._handle_click_32_0.bind(this)));
+    var disposable_0:Function = this.renderer.listen(this._el_38,'click',this.eventHandler(this._handle_click_38_0.bind(this)));
     this._arr_0 = import4.pureProxy1((p0:any):any[] => {
       return [p0];
     });
+    this._expr_4 = import7.UNINITIALIZED;
     this._expr_5 = import7.UNINITIALIZED;
-    this._expr_6 = import7.UNINITIALIZED;
     this.init([],[
       this._text_0,
       this._text_1,
@@ -213,84 +227,85 @@ class _View_HeaderComponent0 extends import1.AppView<import3.HeaderComponent> {
       this._text_29,
       this._text_30,
       this._el_31,
-      this._el_32,
-      this._text_33,
+      this._text_32,
+      this._el_33,
       this._text_34,
       this._text_35,
       this._text_36,
-      this._text_37
+      this._el_37,
+      this._el_38,
+      this._text_39,
+      this._text_40,
+      this._text_41,
+      this._text_42,
+      this._text_43
     ]
     ,[disposable_0],[]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import13.RouterLinkWithHref) && ((32 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._RouterLinkWithHref_32_3; }
-    if (((token === import11.RouterLinkActive) && ((31 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._RouterLinkActive_31_3; }
+    if (((token === import13.RouterLinkWithHref) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._RouterLinkWithHref_38_3; }
+    if (((token === import11.RouterLinkActive) && ((37 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._RouterLinkActive_37_3; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
     var changes:{[key: string]:import7.SimpleChange} = (null as any);
     changes = (null as any);
-    const currVal_3:any = 'active';
-    if (import4.checkBinding(throwOnChange,this._expr_3,currVal_3)) {
-      this._RouterLinkActive_31_3.routerLinkActive = currVal_3;
+    const currVal_2:any = 'active';
+    if (import4.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
+      this._RouterLinkActive_37_3.routerLinkActive = currVal_2;
       if ((changes === (null as any))) { (changes = {}); }
-      changes['routerLinkActive'] = new import7.SimpleChange(this._expr_3,currVal_3);
-      this._expr_3 = currVal_3;
+      changes['routerLinkActive'] = new import7.SimpleChange(this._expr_2,currVal_2);
+      this._expr_2 = currVal_2;
     }
-    if ((changes !== (null as any))) { this._RouterLinkActive_31_3.ngOnChanges(changes); }
+    if ((changes !== (null as any))) { this._RouterLinkActive_37_3.ngOnChanges(changes); }
     changes = (null as any);
-    const currVal_5:any = this._arr_0('login');
-    if (import4.checkBinding(throwOnChange,this._expr_5,currVal_5)) {
-      this._RouterLinkWithHref_32_3.routerLink = currVal_5;
+    const currVal_4:any = this._arr_0('login');
+    if (import4.checkBinding(throwOnChange,this._expr_4,currVal_4)) {
+      this._RouterLinkWithHref_38_3.routerLink = currVal_4;
       if ((changes === (null as any))) { (changes = {}); }
-      changes['routerLink'] = new import7.SimpleChange(this._expr_5,currVal_5);
-      this._expr_5 = currVal_5;
+      changes['routerLink'] = new import7.SimpleChange(this._expr_4,currVal_4);
+      this._expr_4 = currVal_4;
     }
-    if ((changes !== (null as any))) { this._RouterLinkWithHref_32_3.ngOnChanges(changes); }
+    if ((changes !== (null as any))) { this._RouterLinkWithHref_38_3.ngOnChanges(changes); }
     this.detectContentChildrenChanges(throwOnChange);
     if (!throwOnChange) {
-      if (this._query_RouterLink_31_0.dirty) {
-        this._query_RouterLink_31_0.reset([]);
-        this._RouterLinkActive_31_3.links = this._query_RouterLink_31_0;
-        this._query_RouterLink_31_0.notifyOnChanges();
+      if (this._query_RouterLink_37_0.dirty) {
+        this._query_RouterLink_37_0.reset([]);
+        this._RouterLinkActive_37_3.links = this._query_RouterLink_37_0;
+        this._query_RouterLink_37_0.notifyOnChanges();
       }
-      if (this._query_RouterLinkWithHref_31_1.dirty) {
-        this._query_RouterLinkWithHref_31_1.reset([this._RouterLinkWithHref_32_3]);
-        this._RouterLinkActive_31_3.linksWithHrefs = this._query_RouterLinkWithHref_31_1;
-        this._query_RouterLinkWithHref_31_1.notifyOnChanges();
+      if (this._query_RouterLinkWithHref_37_1.dirty) {
+        this._query_RouterLinkWithHref_37_1.reset([this._RouterLinkWithHref_38_3]);
+        this._RouterLinkActive_37_3.linksWithHrefs = this._query_RouterLinkWithHref_37_1;
+        this._query_RouterLinkWithHref_37_1.notifyOnChanges();
       }
-      if ((this.numberOfChecks === 0)) { this._RouterLinkActive_31_3.ngAfterContentInit(); }
+      if ((this.numberOfChecks === 0)) { this._RouterLinkActive_37_3.ngAfterContentInit(); }
     }
     const currVal_0:any = import4.interpolate(1,'http://3amigoso.azurewebsites.net/order/displayorders/?custoRef=',this.context.email,'');
     if (import4.checkBinding(throwOnChange,this._expr_0,currVal_0)) {
       this.renderer.setElementProperty(this._el_15,'href',this.viewUtils.sanitizer.sanitize(import18.SecurityContext.URL,currVal_0));
       this._expr_0 = currVal_0;
     }
-    const currVal_1:any = import4.interpolate(1,'http://3amigoss.azurewebsites.net/api/products?user=',this.context.email,'');
+    const currVal_1:any = import4.interpolate(1,'http://3amigosm.azurewebsites.net/message?custid=',this.context.email,'');
     if (import4.checkBinding(throwOnChange,this._expr_1,currVal_1)) {
-      this.renderer.setElementProperty(this._el_21,'href',this.viewUtils.sanitizer.sanitize(import18.SecurityContext.URL,currVal_1));
+      this.renderer.setElementProperty(this._el_33,'href',this.viewUtils.sanitizer.sanitize(import18.SecurityContext.URL,currVal_1));
       this._expr_1 = currVal_1;
     }
-    const currVal_2:any = import4.interpolate(1,'http://3amigosm.azurewebsites.net/message?custid=',this.context.email,'');
-    if (import4.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
-      this.renderer.setElementProperty(this._el_27,'href',this.viewUtils.sanitizer.sanitize(import18.SecurityContext.URL,currVal_2));
-      this._expr_2 = currVal_2;
-    }
-    const currVal_6:any = this._RouterLinkWithHref_32_3.href;
-    if (import4.checkBinding(throwOnChange,this._expr_6,currVal_6)) {
-      this.renderer.setElementProperty(this._el_32,'href',this.viewUtils.sanitizer.sanitize(import18.SecurityContext.URL,currVal_6));
-      this._expr_6 = currVal_6;
+    const currVal_5:any = this._RouterLinkWithHref_38_3.href;
+    if (import4.checkBinding(throwOnChange,this._expr_5,currVal_5)) {
+      this.renderer.setElementProperty(this._el_38,'href',this.viewUtils.sanitizer.sanitize(import18.SecurityContext.URL,currVal_5));
+      this._expr_5 = currVal_5;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }
   destroyInternal():void {
-    this._RouterLinkWithHref_32_3.ngOnDestroy();
-    this._RouterLinkActive_31_3.ngOnDestroy();
+    this._RouterLinkWithHref_38_3.ngOnDestroy();
+    this._RouterLinkActive_37_3.ngOnDestroy();
   }
-  private _handle_click_32_0($event:any):boolean {
+  private _handle_click_38_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this._RouterLinkWithHref_32_3.onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+    const pd_0:any = ((<any>this._RouterLinkWithHref_38_3.onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
     return (true && pd_0);
   }
 }
